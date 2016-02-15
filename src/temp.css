@@ -3,15 +3,29 @@
 }
 
 html{
-  background-color: #fff;
-  margin-top: 300px;
-  margin-left:200px;
+  background-color: #00A2E8;
+  font-family: Tahoma, Geneva, sans-serif;
+  text-shadow: 2px 2px rgba(0,0,0,0.6);
+  color: #fff;
+}
+
+h1{
+  text-align: center;
+
+
+  font-size: 75px;
+}
+
+h2{
+text-align: center;
+  font-size: 45px;
 }
 
 .burger{
+  margin: 0 auto;
   background-image: url('http://clipartsign.com/upload/2016/01/27/hamburger-cartoon-burger-clipart.png');
-  width: 300px;
-  height: 300px;
+  width: 400px;
+  height: 400px;
   background-size: contain;
   background-position: 50% 50%;
   background-repeat: no-repeat;
@@ -24,7 +38,7 @@ html{
 }
 
 .blocking{
-  background-color: white;
+  background-color: #00A2E8;
   width: 200%;
   height: 200%;
   position: absolute;
