@@ -1,0 +1,92 @@
+* {
+  box-sizing: border-box;
+}
+
+html{
+  background-color: #fff;
+  margin-top: 300px;
+  margin-left:200px;
+}
+
+.burger{
+  background-image: url('http://clipartsign.com/upload/2016/01/27/hamburger-cartoon-burger-clipart.png');
+  width: 300px;
+  height: 300px;
+  background-size: contain;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.mask{
+  position: absolute;
+  //overflow: hidden;
+}
+
+.blocking{
+  background-color: white;
+  width: 200%;
+  height: 200%;
+  position: absolute;
+  //border: 1px solid red;
+  //transition: transform 100ms linear;
+}
+
+.top-left{
+  top: 0;
+  left: 0;
+  right: 50%;
+  bottom: 50%;
+  overflow: hidden;
+}
+
+.top-left .blocking{
+  left: 100%;
+  transform-origin: 0 100%;
+  margin-top: -100%;
+  transform: rotate(-90deg);
+}
+
+.top-right{
+  top: 0;
+  right: 0;
+  left: 50%;
+  bottom: 50%;
+  overflow: hidden;
+}
+
+.top-right .blocking{
+  top: 100%;
+  transform-origin: 0 0;
+  transform: rotate(-90deg);
+}
+
+.bottom-left{
+  bottom: 0;
+  left: 0;
+  right: 50%;
+  top: 50%;
+  overflow: hidden;
+}
+
+.bottom-left .blocking{
+  right: -1px;
+  bottom: 100%;
+  transform-origin: 100% 100%;
+  transform: rotate(-90deg);
+}
+
+.bottom-right{
+  bottom: 0;
+  right: 0;
+  top: 50%;
+  left: 50%;
+  overflow: hidden;
+}
+
+.bottom-right .blocking{
+  top: 0;
+  right: 100%;
+  transform-origin: 100% 0%;
+  transform: rotate(-90deg);
+}
