@@ -1,0 +1,20 @@
+extend ./layout.jade
+
+block scripts
+  script(src='temp.js')
+  
+block css
+  link(rel='stylesheet',href='temp.css')
+  
+block content
+  h1 It's almost burger time
+  h2.goal-time 1d 14h 12m
+  .burger
+    .mask.top-left
+      .blocking
+    .mask.top-right
+      .blocking
+    .mask.bottom-left
+      .blocking
+    .mask.bottom-right
+      .blocking
