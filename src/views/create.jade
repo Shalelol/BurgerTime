@@ -1,0 +1,21 @@
+extend ./layout.jade
+
+block scripts
+  script(src='libs/bootstrap-datetimepicker.min.js')
+  script(src='create.js')
+  
+block css
+  link(rel='stylesheet',href='/libs/bootstrap-datetimepicker.min.css')
+
+block content
+  h1 When is burgertime?
+  .container
+    div
+      .form-group
+        .row
+          .time-container.col-md-8.col-md-offset-2
+            #datetimepicker1
+  .container
+    .row
+      .start-burgertime-container.col-md-8.col-md-offset-2
+        a.btn.btn-default.start-burgertime Start countdown

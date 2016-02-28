@@ -5,6 +5,11 @@ app.set('view engine', 'jade');
 app.use(express.static('public'));
 
 app.get('/', (req, res) => {
+  if(!req.query.time){
+    res.render('create');
+    return;
+  }
+
   res.render('index')
 });
 

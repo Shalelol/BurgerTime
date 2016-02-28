@@ -4,10 +4,13 @@ html
     block title
       title Burger time
     script(src='//code.jquery.com/jquery-2.2.0.min.js')
+    script(src='//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js')
     script(src='//momentjs.com/downloads/moment.js')
-    script(src='//raw.githubusercontent.com/mckamey/countdownjs/master/countdown.js')
-    script(src='https://raw.githubusercontent.com/icambron/moment-countdown/master/dist/moment-countdown.min.js')
+    script(src='/libs/countdown.js')
+    script(src='/libs/moment-countdown.min.js')
     block scripts
+    link(rel='stylesheet',href='//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css')
+    link(rel='stylesheet',href='style.css')
     block css
   body
     block content
